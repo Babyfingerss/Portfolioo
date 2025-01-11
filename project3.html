@@ -1,295 +1,98 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Custom Properties, update these for your own design */
-
-:root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Florence Umoinyang Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with my own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Project 3: Mobile Signup Flow</title>
+    <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+    <header>
+        <!-- <h1>E-commerce Website</h1> -->
+        <nav>
+            <button class="headerbutton"><a href="index.html">Back to Portfolio</a></button>
+        </nav>
+    </header>
+      <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Project 3: <strong>Mobile Signup Flow</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Design of a Mobile Signup Flow</p>
+            <img src="img/Portfolio 3.jpeg" alt="" class="intro__img">
+        </section>
     
-    --fw-reg: 300;
-    --fw-bold: 900;
-    
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
-    
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
-    
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-          0.125em 0.125em 0.25em rgba(0,0,0,.15);
-}
-/* Back to Portfolio Link */
-.headerbutton{
-    background-color: #16e0bd;
-    border-radius: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
-}
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #303030;
-    padding: 1rem;
-    text-align: right;
-    z-index: 10;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-nav a{
-    text-decoration: none;
-    color: #0b0b0b;
-    font-weight: normal;
-    transition: color 0.3s;
-}
-.headerbutton :hover{
-    color: white;
+     <section class="project-detail">
+        <div class="op">
+             <h2>Overview</h2>
+    <ol>
+        <li>
+            <strong>Project Name & Objective:</strong>
+            <ul>
+                <li>Name:<strong class="websitename">Echo Loop</strong> - Mobile Signup Flow </li>
+                <li>Objective: Design of a simple, user-friendly signup flow for mobile that ensures a smooth onboarding experience, guiding users seamlessly from the homepage to account creation.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Target Audience & End Users:</strong>
+            <ul>
+            <li>Mobile app users, including first-time visitors and returning customers.</li>
+            </ul>
+        </li>
+    </ol>
+        </div>
+        <div class="op">
+        <h2>Design Process</h2>
+        <ol>
+              <li>
+            <strong>Design Challenge and Scope:</strong>
+            <ul>
+                <li>Challenge: How can we create a mobile-friendly signup flow that reduces friction and ensures users can quickly register or log in while maintaining trust and brand consistency?</li>
+                <li>Scope: Homepage, Login Page, Signup Page.</li>
+                <li>Timeline: 1 day</li>
+                
+            </ul>
+        </li>
+        <li>
+            <strong>Design Tools Used:</strong>
+            <ul>
+                <li>Figma</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+      
+    </ol>
+        </div>
+        
 
-}
+        <div class="g">
+        <h2>Mockups</h2>
+        <div class="gallery">
+            <img src="img/Login/L-1.jpeg" alt="Screenshot 1">
+            <img src="img/Login/L-2.jpeg" alt="Screenshot 2">
+            <img src="img/Login/L-3.jpeg" alt="Screenshot 3">
+        </div> 
+        </div>
+        <div class="imp">
+        <h2>Impact</h2>
+        <p>The Mobile Signup Flow project greatly improves user onboarding by offering a clean, intuitive, and mobile-optimized experience. The streamlined design ensures that users can quickly register or log in, reducing barriers to entry and improving retention rates. With a cohesive layout across the homepage, login, and signup pages, the flow maintains brand consistency while fostering trust and ease of use. This project enhances the overall user experience, making it more likely for users to engage with the app and access its features effectively.</p>
+        </div>
 
-@media (min-width: 800px) {
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
-    }
-    
-}
+    </section>
 
-html {
-    scroll-behavior: smooth;
-}
-
-
-body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-strong { font-weight: var(--fw-bold) }
-
-h1,
-h2,
-h3 {
-    line-height: 1;
-    margin: 0;
-}
-
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
-
-.section__title--intro {
-    font-weight: var(--fw-reg);
-}
-
-.section__title--intro strong {
-    display: block;
-}
-
-.section__subtitle--intro,
-.section__subtitle--about {
-    background: var(--clr-accent);
-    padding: .25em 1em;
-    font-family: var(--ff-secondary);
-    margin-bottom: 1em;
-    text-align: center;
-    color: #0a0b0b;
-}
-
-/*  Intro section  */
-
-.intro {
-    position: relative;
-}
-
-.intro__img {
-    box-shadow: var(--bs);
-}
-
-@media (min-width: 600px) {
-    .intro {
-        display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas: 
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
-    }
-    
-    .intro__img {
-        grid-area: img;
-        min-width: 250px;
-        position: relative;
-        z-index: 2;
-    }    
-    
-    .section__subtitle--intro {
-        align-self: start;
-        grid-column: -1 / 1;
-        grid-row: 2;
-        text-align: right;
-        position: relative;
-        left: -1.5em;
-        width: calc(100% + 1.5em);
-    }
-    
-}
-
-/* General Reset */
-body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
-    margin-top: 7em;
-}
-
-@media (min-width: 1000px) {
-    header h1 {
-        margin-left: 18em;
-} 
-}
-
-/* Section Titles */
-h2, h3 {
-    color: #16e0bd;
-    margin: 1rem 0;
-}
-
-
-/* Project Page */
-.op, .imp {
-    max-width: 1400px;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    border-radius: 5px;
-    background-color: #303030;
-    
-}
-.websitename{
-    color: #16e0bd;
-}
-.op p, .imp p, .op ol{
-    color: white;
-}
-.op ul li{
-    color: white;
-}
-ol {
-    counter-reset: list-counter;
-    padding-left: 20px;
-    list-style-type: none; /* Disable default numbering */
-}
-
-ol > li {
-    counter-increment: list-counter;
-}
-
-ol > li::before {
-    content: counter(list-counter) ". ";
-    font-weight: bold;
-}
-ul li{
-    margin-left: 1em;
-    list-style-type: disc;
-}
-.g {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-}
-
-.project-detail h2 {
-    
-    font-size: 1.6rem;
-    border-bottom: 2px solid #16e0bd;
-    padding-bottom: 0.5rem;
-}
-
-/* .project-detail p {
-    color: #e0e0e0;
-    margin: 1rem 0;
-} */
-
-.project-detail ul {
-    margin: 1rem 0;
-    padding-left: 1.5rem;
-}
-
-
-.project-detail .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin: 2rem 0;
-}
-
-.project-detail .gallery img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
-}
-
-.project-detail .gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* Buttons */
-button, .btn {
-    color: #0f0e0e;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover, .btn:hover {
-    background-color: #40655f;
-    color: #0a0b0b;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-    border-top: 1px solid #333;
-    margin-top: 2rem;
-}
-
-footer a {
-    text-decoration: none;
-    color: #16e0bd;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
+    <footer>
+        <p>&copy; 2025 Florence Umoinyang</p>
+        <a href="mailto:aakaiflorence@gmail.com">aakaiflorence@gmail.com</a>
+    </footer>
+</body>
+</html>
